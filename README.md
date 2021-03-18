@@ -19,7 +19,7 @@ Details page - showing product price, image, description and status
 - Back button: back to previous page
 
 Requirement:
-- Use ajax to fetch data
+- Use ajax to fetch data  (fetch local data.json)
 - handle empty data, fail responses. App should not crash with any missing data.
 - Do not reload the page
 - When click the back button on details page, the landing page status should be resumed
