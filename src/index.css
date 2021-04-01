@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  margin: 0;
+  z-index: 3;
+}
+
+header{
+  background-color: #22254b;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+  color: white;
+}
+
+.products-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.image{
+  height: 100px;
+  width: 100px;
+}
+
+.selected{
+  background-color: #22254b;
+  color:white;
+  position: sticky;
+  top: 5%;
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+  border: 3px solid blue;
+  z-index: 3;
+}
+.clear-bt{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.detail-panel{
+  height: 30vh;
+  width:100%;
+  border: 3px solid red;
+  margin-top: 10px;
+}
+
+.show_detail{
+  display: block;
+}
+
+.hide_detail{
+  display: none;
+}
+
+.product{
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin:15px;
+}
+.white-bgcolor{
+  background-color:white;
+}
+.red-bgcolor{
+  background-color:red;
+}
+.products-detail-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.product img{
+  object-fit: contain;
+  width: 100%;
+  height: 300px;
+}
+.bt-container{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 20px;
+}
+.preview-bt{
+  background-color:#6495ED;
+  margin-right: 25%;
+  margin-left: 10%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.detail{
+  background-color:#6495ED;
+  margin-right: 25%;
+  margin-left:10%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.preview-info{
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+}
+.preview-info .code{
+  font-size: 18px;
+  margin: 5px 10px;
+
+}
+.preview-info .price{
+  font-size: 20px;
+  margin: 5px 10px;
+}
+
+.preview-info .select{
+  position: absolute;
+  background-color: aquamarine;
+  margin: 10px 10px;
+  top:80%;
+  border-radius: 2px;
+}
+.preview-info .cancel{
+  position:absolute;
+  background-color: aquamarine;
+  margin: 10px 10px;
+  top:80%;
+  left:75%;
+  border-radius: 2px;;
+}
