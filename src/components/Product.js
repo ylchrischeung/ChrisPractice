@@ -5,29 +5,24 @@ class Product extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            previewStatus: false,
-            colorChange : false,
-            cancelStatus :false,
+            previewStatus: false
         };
         this.selectedClick = this.selectedClick.bind(this);
         this.cancelClick = this.cancelClick.bind(this);
     }
-    showMessage(){
-        console.log("12312468716");
-    }
-    selectedClick(selected,item) {
-        this.setState({colorChange : true});
+    selectedClick(selected,item){
         this.props.itemData(selected,item);
     }
     cancelClick(canceled,index,item){
-        this.setState({colorChange : false});
         this.props.cancel(canceled,index,item);
     }
     render() {
+        let list = this.props.selectedItem;
+        let result = list.includes(this.props.product.code);
         const price_object = this.props.product.hasOwnProperty("price") ? this.props.product.price : this.props.product.priceList;
         const price = price_object.hasOwnProperty('formattedValue') ? price_object.formattedValue : 'null';
         return (
-            <div className={`product ${this.state.colorChange && !this.props.colorreset? "red-bgcolor" : "white-bgcolor"}`
+            <div className={`product ${result? "red-bgcolor" : "white-bgcolor"}`
                     } >
                 <img src={this.props.product.images[0].url} alt="error" />
                 <h3>{this.props.product.name}</h3>

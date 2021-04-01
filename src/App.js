@@ -103,6 +103,7 @@ class App extends React.Component {
           </div>
           <div className="products-container">
             {Data.products.map((product, i) => <Product key={i}
+            selectedItem = {this.state.selected_item}
             color={this.state.colorChange}
             colorreset={this.state.colorReset}
               product={product}
