@@ -65,14 +65,16 @@ class App extends React.Component {
                     });
   }
   getDetail(img, code, price, description, status) {
+    if(this.state.detailStatus === false){
     this.setState({
-      detailStatus: !this.state.detailStatus,
-      detail_img: img,
-      detail_index: code,
-      detail_price: price,
-      detail_des: description,
-      detail_stock: status
-    });
+        detailStatus: !this.state.detailStatus,
+        detail_img: img,
+        detail_index: code,
+        detail_price: price,
+        detail_des: description,
+        detail_stock: status
+      });
+    }
   }
   backClick(detail_status){
     this.setState({detailStatus : !detail_status});
