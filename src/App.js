@@ -8,9 +8,6 @@ class App extends React.Component {
     this.state = {
       selected_item: [],
       detailStatus: false,
-      backStatus: false,
-      colorReset : false,
-      bgColor : 'white',
       selectedStatus:false,
       canceled:false,
       detail_index: "",
@@ -28,12 +25,7 @@ class App extends React.Component {
   passSelect(selected,item) {
     this.setState({colorReset : false});
     selected = true;
-    // color = true;
-    // this.setState({colorChange : color});
     this.setState({selectedStatus : !selected});
-    // Product.showMessage();
-    // console.log(selected);
-    // console.log(this.state.colorReset);
     const item_list = this.state.selected_item;
     let result = item_list.includes(item)
     if(!result && selected ){
@@ -46,16 +38,11 @@ class App extends React.Component {
     canceled = true;
     const canceled_item = cancel_item.indexOf(item);
     cancel_item.splice(canceled_item,1);
-    // color = false;
-    // this.setState({colorChange : color});
     if(canceled ===true){
       this.setState({selectedStatus:!this.state.selectedStatus,
                   selected_item:cancel_item,
                   canceled : !canceled})}
   }
-  // getColorstatus(color){
-  //   this.setState({color : color});
-  // }
   clearClick() {
     const delete_item = Object.assign([], this.state.selected_item);
     delete_item.splice(0);
