@@ -1,0 +1,46 @@
+.bkggrey {
+    color: grey;
+    padding: 40px;
+    font-family: Arial;
+    text-align: left;
+  }
+
+  .back {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    white-space:nowrap;
+    
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.border{
+  background-color: #ffffff;
+  display:inline-block;
+  position:relative;
+  color: rgb(0, 0, 0);
+  font-size: small;
+  font-weight: bold;
+  text-align: left;
+  align-items: flex-start;
+  border-style: solid;
+}
+
+.te{
+  background-color: #94a8ff;
+  display:inline-block;
+  position:relative;
+  color: rgb(0, 0, 0);
+  font-size: small;
+  font-weight: bold;
+  text-align: left;
+  align-items: flex-start;
+  border-style: solid;
+}
