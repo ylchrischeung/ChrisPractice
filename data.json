@@ -1276,17 +1276,6 @@
         "membershipLevel": "NORMAL"
       },
       "baseProduct": "H640400193",
-      "images": [
-        {
-          "imageType": "PRIMARY",
-          "format": "product",
-          "url": "https://images.hktv-img.com/images/HKTV/227/93_main_46223781_20200721141445_01_300.jpg",
-          "altText": null,
-          "galleryIndex": null,
-          "width": null,
-          "hoverImageUrl": null
-        }
-      ],
       "categories": [
         {
           "code": "AA32550525001",
@@ -2273,7 +2262,7 @@
     },
     {
       "code": "H7662001_S_XPERIA1IIBPGLA",
-      "name": "SUPREMEGLASS Sony Xperia 1 II 2.5D 0.33mm 全屏 鋼化玻璃貼",
+    
       "url": "main/Top-One-Network-International-Limited/s/H7662001/%E9%9B%BB%E5%AD%90%E9%9B%BB%E5%99%A8/%E9%9B%BB%E5%AD%90%E9%9B%BB%E5%99%A8/%E6%89%8B%E6%A9%9F-%E5%B9%B3%E6%9D%BF%E9%9B%BB%E8%85%A6/%E6%89%8B%E6%8F%90%E9%9B%BB%E8%A9%B1/Sony/SUPREMEGLASS-Sony-Xperia-1-II-25D-033mm-%E5%85%A8%E5%B1%8F-%E9%8B%BC%E5%8C%96%E7%8E%BB%E7%92%83%E8%B2%BC/p/H7662001_S_XPERIA1IIBPGLA",
       "description": "<p><span style=\"font-size: 14px;float: none;\">Sony Xperia 1 II 2.5D 0.33mm 全屏 鋼化玻璃貼 </span><br style=\"font-size: 14px;\"/><span style=\"font-size: 14px;float: none;\">．硬度強化</span><br style=\"font-size: 14px;\"/><span style=\"font-size: 14px;float: none;\">．高清晰</span><br style=\"font-size: 14px;\"/><span style=\"font-size: 14px;float: none;\">．全屏幕保護</span><br/></p>",
       "purchasable": true,
